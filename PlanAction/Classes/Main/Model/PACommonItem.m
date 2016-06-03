@@ -9,5 +9,18 @@
 #import "PACommonItem.h"
 
 @implementation PACommonItem
++ (instancetype)itemWithTitleAndImage:(NSString *)title icon:(NSString *)icon
+{
+    PACommonItem *item = [[self alloc] init];
+    item.title = title;
+    item.icon = icon;
+    return item;
+}
 
++ (instancetype)itemWithTitle:(NSString *)title
+{
+    PACommonItem *item = [[self alloc] init];
+    item.title = title;
+    return item;
+}
 @end

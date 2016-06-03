@@ -6,8 +6,12 @@
 //  Copyright © 2016年 e29hz. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "PACommonItem.h"
 
-@interface PACommonLabelItem : NSObject
+@interface PACommonLabelItem : PACommonItem
+/**
+ *  label显示的内容
+ */
+@property (nonatomic, copy) NSString *text;
 
 @end

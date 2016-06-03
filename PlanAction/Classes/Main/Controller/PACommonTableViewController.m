@@ -7,92 +7,125 @@
 //
 
 #import "PACommonTableViewController.h"
+#import "PACommonTableViewCell.h"
+#import "PACommonGroup.h"
+#import "PACommonItem.h"
 
 @interface PACommonTableViewController ()
+
+@property (nonatomic, strong) NSMutableArray *groups;
 
 @end
 
 @implementation PACommonTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (NSMutableArray *)groups
+{
+    if (_groups == nil) {
+        self.groups = [NSMutableArray array];
+    }
+    return _groups;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/** 
+ * 屏蔽tableView的样式 
+ */
+- (id)init
+{
+    return [self initWithStyle:UITableViewStyleGrouped];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+/**
+ *  组数
+ */
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return self.groups.count;
+}
+/**
+ *  每组中cell个数
+ */
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    PACommonGroup *group = self.groups[section];
+    return group.items.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 50;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PACommonGroup *group = self.groups[indexPath.section];
+    PACommonTableViewCell *cell = [PACommonTableViewCell cellWithTableView:tableView];
+//    PACommonGroup *group = self.groups[indexPath.section];
     
-    // Configure the cell...
-    
+    cell.item = group.items[indexPath.row];
+    // 设置cell所处的行号 和 所处组的总行数
+    [cell setIndexPath:indexPath rowsInSection:group.items.count];
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    PACommonGroup *group = self.groups[section];
+    return group.footer;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    PACommonGroup *group = self.groups[section];
+    return group.header;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // 1.取出这行对应的item模型
+    PACommonGroup *group = self.groups[indexPath.section];
+    PACommonItem *item = group.items[indexPath.row];
+    
+    // 2.判断有无需要跳转的控制器
+    if (item.destVcClass) {
+        UIViewController *destVc = [[item.destVcClass alloc] init];
+        destVc.title = item.title;
+        [self.navigationController pushViewController:destVc animated:YES];
+    }
+    
+    // 3.判断有无想执行的操作
+    if (item.operation) {
+        item.operation();
+    }
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
+{
+    if ([view isKindOfClass:[UILabel class]])
+    {
+        UILabel *lbl = (UILabel *)view;
+        [lbl setFont:[UIFont fontWithName:fontFamily size:[[lbl font] pointSize]]];
+    }
+    if (isSubViews)
+    {
+        for (UIView *sview in view.subviews)
+        {
+            [self setFontFamily:fontFamily forView:sview andSubViews:YES];
+        }
+    }
 }
-*/
-
 @end

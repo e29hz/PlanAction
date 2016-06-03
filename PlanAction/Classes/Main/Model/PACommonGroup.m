@@ -9,5 +9,8 @@
 #import "PACommonGroup.h"
 
 @implementation PACommonGroup
-
++ (instancetype)group
+{
+    return [[self alloc] init];
+}
 @end

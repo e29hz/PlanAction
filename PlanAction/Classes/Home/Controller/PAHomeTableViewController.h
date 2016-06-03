@@ -6,8 +6,8 @@
 //  Copyright © 2016年 e29hz. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "PACommonTableViewController.h"
 
-@interface PAHomeTableViewController : UITableViewController
+@interface PAHomeTableViewController : PACommonTableViewController
 
 @end

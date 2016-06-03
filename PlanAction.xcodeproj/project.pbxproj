@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41425101CB0D3A100FFEC41 /* PACalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E414250F1CB0D3A100FFEC41 /* PACalendarViewController.m */; };
 		E42781A21CAA74DE0071A02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781A11CAA74DE0071A02D /* main.m */; };
 		E42781A51CAA74DE0071A02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781A41CAA74DE0071A02D /* AppDelegate.m */; };
-		E42781A81CAA74DE0071A02D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781A71CAA74DE0071A02D /* ViewController.m */; };
 		E42781AB1CAA74DE0071A02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42781A91CAA74DE0071A02D /* Main.storyboard */; };
-		E42781AD1CAA74DE0071A02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42781AC1CAA74DE0071A02D /* Assets.xcassets */; };
 		E42781B01CAA74DE0071A02D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42781AE1CAA74DE0071A02D /* LaunchScreen.storyboard */; };
 		E42781BB1CAA74DE0071A02D /* PlanActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781BA1CAA74DE0071A02D /* PlanActionTests.m */; };
 		E42781C61CAA74DE0071A02D /* PlanActionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781C51CAA74DE0071A02D /* PlanActionUITests.m */; };
+		E42781E31CAA7CE90071A02D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42781E21CAA7CE90071A02D /* Assets.xcassets */; };
+		E42781E91CAA8FF40071A02D /* PANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781E81CAA8FF40071A02D /* PANavigationController.m */; };
+		E42781EF1CAA964B0071A02D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781EE1CAA964B0071A02D /* UIView+Extension.m */; };
+		E4A192231CAA9E2E00C19A4B /* PABottomPlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192221CAA9E2E00C19A4B /* PABottomPlanView.m */; };
+		E4A192291CAAAFEC00C19A4B /* PATabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192281CAAAFEC00C19A4B /* PATabBar.m */; };
+		E4A1922F1CABA31D00C19A4B /* PAHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A1922E1CABA31D00C19A4B /* PAHomeTableViewController.m */; };
+		E4A192321CABAC4A00C19A4B /* PACommonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192311CABAC4A00C19A4B /* PACommonTableViewController.m */; };
+		E4A192351CABACE400C19A4B /* PACommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192341CABACE400C19A4B /* PACommonTableViewCell.m */; };
+		E4A192381CABB0C400C19A4B /* PACommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192371CABB0C400C19A4B /* PACommonItem.m */; };
+		E4A1923B1CABB17800C19A4B /* PACommonLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A1923A1CABB17800C19A4B /* PACommonLabelItem.m */; };
+		E4A1923E1CABB2B300C19A4B /* PACommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A1923D1CABB2B300C19A4B /* PACommonGroup.m */; };
+		E4A192411CABB4B600C19A4B /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192401CABB4B600C19A4B /* UIImage+Extension.m */; };
+		E4A192441CABBF2900C19A4B /* PATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192431CABBF2900C19A4B /* PATableView.m */; };
+		E4C012611CABE1CD00649DB3 /* TpldKhangXiDictTrial.otf in Resources */ = {isa = PBXBuildFile; fileRef = E4A192451CABD55E00C19A4B /* TpldKhangXiDictTrial.otf */; };
+		E4C012621CABE1CD00649DB3 /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */ = {isa = PBXBuildFile; fileRef = E4A192461CABD55E00C19A4B /* Wyue-GutiFangsong-NC_deliverable.otf */; };
+		E4D4076E1CAD4C6600589801 /* PASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4076D1CAD4C6600589801 /* PASearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +50,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E414250E1CB0D3A100FFEC41 /* PACalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACalendarViewController.h; sourceTree = "<group>"; };
+		E414250F1CB0D3A100FFEC41 /* PACalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACalendarViewController.m; sourceTree = "<group>"; };
 		E427819D1CAA74DE0071A02D /* PlanAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42781A11CAA74DE0071A02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E42781A31CAA74DE0071A02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E42781A41CAA74DE0071A02D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E42781A61CAA74DE0071A02D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E42781A71CAA74DE0071A02D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E42781A31CAA74DE0071A02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
+		E42781A41CAA74DE0071A02D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
 		E42781AA1CAA74DE0071A02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E42781AC1CAA74DE0071A02D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E42781AF1CAA74DE0071A02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E42781B11CAA74DE0071A02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E42781B61CAA74DE0071A02D /* PlanActionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanActionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +65,36 @@
 		E42781C11CAA74DE0071A02D /* PlanActionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanActionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42781C51CAA74DE0071A02D /* PlanActionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanActionUITests.m; sourceTree = "<group>"; };
 		E42781C71CAA74DE0071A02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42781E21CAA7CE90071A02D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E42781E71CAA8FF40071A02D /* PANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PANavigationController.h; sourceTree = "<group>"; };
+		E42781E81CAA8FF40071A02D /* PANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PANavigationController.m; sourceTree = "<group>"; };
+		E42781ED1CAA964B0071A02D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E42781EE1CAA964B0071A02D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		E4A192201CAA971100C19A4B /* PAPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAPrefixHeader.pch; sourceTree = "<group>"; };
+		E4A192211CAA9E2E00C19A4B /* PABottomPlanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABottomPlanView.h; sourceTree = "<group>"; };
+		E4A192221CAA9E2E00C19A4B /* PABottomPlanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABottomPlanView.m; sourceTree = "<group>"; };
+		E4A192271CAAAFEC00C19A4B /* PATabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATabBar.h; sourceTree = "<group>"; };
+		E4A192281CAAAFEC00C19A4B /* PATabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATabBar.m; sourceTree = "<group>"; };
+		E4A1922D1CABA31D00C19A4B /* PAHomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAHomeTableViewController.h; sourceTree = "<group>"; };
+		E4A1922E1CABA31D00C19A4B /* PAHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAHomeTableViewController.m; sourceTree = "<group>"; };
+		E4A192301CABAC4A00C19A4B /* PACommonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonTableViewController.h; sourceTree = "<group>"; };
+		E4A192311CABAC4A00C19A4B /* PACommonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonTableViewController.m; sourceTree = "<group>"; };
+		E4A192331CABACE400C19A4B /* PACommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonTableViewCell.h; sourceTree = "<group>"; };
+		E4A192341CABACE400C19A4B /* PACommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonTableViewCell.m; sourceTree = "<group>"; };
+		E4A192361CABB0C400C19A4B /* PACommonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonItem.h; sourceTree = "<group>"; };
+		E4A192371CABB0C400C19A4B /* PACommonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonItem.m; sourceTree = "<group>"; };
+		E4A192391CABB17800C19A4B /* PACommonLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonLabelItem.h; sourceTree = "<group>"; };
+		E4A1923A1CABB17800C19A4B /* PACommonLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonLabelItem.m; sourceTree = "<group>"; };
+		E4A1923C1CABB2B300C19A4B /* PACommonGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonGroup.h; sourceTree = "<group>"; };
+		E4A1923D1CABB2B300C19A4B /* PACommonGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonGroup.m; sourceTree = "<group>"; };
+		E4A1923F1CABB4B600C19A4B /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		E4A192401CABB4B600C19A4B /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		E4A192421CABBF2900C19A4B /* PATableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATableView.h; sourceTree = "<group>"; };
+		E4A192431CABBF2900C19A4B /* PATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATableView.m; sourceTree = "<group>"; };
+		E4A192451CABD55E00C19A4B /* TpldKhangXiDictTrial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TpldKhangXiDictTrial.otf; sourceTree = "<group>"; };
+		E4A192461CABD55E00C19A4B /* Wyue-GutiFangsong-NC_deliverable.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyue-GutiFangsong-NC_deliverable.otf"; sourceTree = "<group>"; };
+		E4D4076C1CAD4C6600589801 /* PASearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASearchViewController.h; sourceTree = "<group>"; };
+		E4D4076D1CAD4C6600589801 /* PASearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +145,10 @@
 		E427819F1CAA74DE0071A02D /* PlanAction */ = {
 			isa = PBXGroup;
 			children = (
-				E42781A31CAA74DE0071A02D /* AppDelegate.h */,
-				E42781A41CAA74DE0071A02D /* AppDelegate.m */,
-				E42781A61CAA74DE0071A02D /* ViewController.h */,
-				E42781A71CAA74DE0071A02D /* ViewController.m */,
+				E4C012601CABE10D00649DB3 /* resource */,
+				E42781D31CAA76490071A02D /* Classes */,
 				E42781A91CAA74DE0071A02D /* Main.storyboard */,
-				E42781AC1CAA74DE0071A02D /* Assets.xcassets */,
 				E42781AE1CAA74DE0071A02D /* LaunchScreen.storyboard */,
-				E42781B11CAA74DE0071A02D /* Info.plist */,
 				E42781A01CAA74DE0071A02D /* Supporting Files */,
 			);
 			path = PlanAction;
@@ -117,7 +157,10 @@
 		E42781A01CAA74DE0071A02D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E42781E21CAA7CE90071A02D /* Assets.xcassets */,
+				E42781B11CAA74DE0071A02D /* Info.plist */,
 				E42781A11CAA74DE0071A02D /* main.m */,
+				E4A192201CAA971100C19A4B /* PAPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -138,6 +181,204 @@
 				E42781C71CAA74DE0071A02D /* Info.plist */,
 			);
 			path = PlanActionUITests;
+			sourceTree = "<group>";
+		};
+		E42781D31CAA76490071A02D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E42781D81CAA76490071A02D /* Main */,
+				E42781D41CAA76490071A02D /* Home */,
+				E4D407641CACFB3900589801 /* Calendar */,
+				E4D407681CACFB3900589801 /* Search */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E42781D41CAA76490071A02D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E42781D51CAA76490071A02D /* Controller */,
+				E42781D61CAA76490071A02D /* Model */,
+				E42781D71CAA76490071A02D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E42781D51CAA76490071A02D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1922D1CABA31D00C19A4B /* PAHomeTableViewController.h */,
+				E4A1922E1CABA31D00C19A4B /* PAHomeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E42781D61CAA76490071A02D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4A192391CABB17800C19A4B /* PACommonLabelItem.h */,
+				E4A1923A1CABB17800C19A4B /* PACommonLabelItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E42781D71CAA76490071A02D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4A192211CAA9E2E00C19A4B /* PABottomPlanView.h */,
+				E4A192221CAA9E2E00C19A4B /* PABottomPlanView.m */,
+				E4A192421CABBF2900C19A4B /* PATableView.h */,
+				E4A192431CABBF2900C19A4B /* PATableView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E42781D81CAA76490071A02D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E42781DB1CAA76490071A02D /* Model */,
+				E42781DE1CAA76490071A02D /* View */,
+				E42781DA1CAA76490071A02D /* Controller */,
+				E42781D91CAA76490071A02D /* Category */,
+				E42781DD1CAA76490071A02D /* Tool */,
+				E42781DC1CAA76490071A02D /* Other */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E42781D91CAA76490071A02D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1923F1CABB4B600C19A4B /* UIImage+Extension.h */,
+				E4A192401CABB4B600C19A4B /* UIImage+Extension.m */,
+				E42781ED1CAA964B0071A02D /* UIView+Extension.h */,
+				E42781EE1CAA964B0071A02D /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E42781DA1CAA76490071A02D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E42781E71CAA8FF40071A02D /* PANavigationController.h */,
+				E42781E81CAA8FF40071A02D /* PANavigationController.m */,
+				E4A192301CABAC4A00C19A4B /* PACommonTableViewController.h */,
+				E4A192311CABAC4A00C19A4B /* PACommonTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E42781DB1CAA76490071A02D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4A192361CABB0C400C19A4B /* PACommonItem.h */,
+				E4A192371CABB0C400C19A4B /* PACommonItem.m */,
+				E4A1923C1CABB2B300C19A4B /* PACommonGroup.h */,
+				E4A1923D1CABB2B300C19A4B /* PACommonGroup.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E42781DC1CAA76490071A02D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E42781A31CAA74DE0071A02D /* AppDelegate.h */,
+				E42781A41CAA74DE0071A02D /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E42781DD1CAA76490071A02D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		E42781DE1CAA76490071A02D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4A192271CAAAFEC00C19A4B /* PATabBar.h */,
+				E4A192281CAAAFEC00C19A4B /* PATabBar.m */,
+				E4A192331CABACE400C19A4B /* PACommonTableViewCell.h */,
+				E4A192341CABACE400C19A4B /* PACommonTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4C012601CABE10D00649DB3 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				E4A192451CABD55E00C19A4B /* TpldKhangXiDictTrial.otf */,
+				E4A192461CABD55E00C19A4B /* Wyue-GutiFangsong-NC_deliverable.otf */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		E4D407641CACFB3900589801 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				E4D407651CACFB3900589801 /* Controller */,
+				E4D407661CACFB3900589801 /* Model */,
+				E4D407671CACFB3900589801 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		E4D407651CACFB3900589801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E414250E1CB0D3A100FFEC41 /* PACalendarViewController.h */,
+				E414250F1CB0D3A100FFEC41 /* PACalendarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4D407661CACFB3900589801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D407671CACFB3900589801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4D407681CACFB3900589801 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E4D407691CACFB3900589801 /* Controller */,
+				E4D4076A1CACFB3900589801 /* Model */,
+				E4D4076B1CACFB3900589801 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		E4D407691CACFB3900589801 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4D4076C1CAD4C6600589801 /* PASearchViewController.h */,
+				E4D4076D1CAD4C6600589801 /* PASearchViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4D4076A1CACFB3900589801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E4D4076B1CACFB3900589801 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +443,7 @@
 		E42781951CAA74DE0071A02D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PA;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = e29hz;
 				TargetAttributes = {
@@ -246,8 +488,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C012611CABE1CD00649DB3 /* TpldKhangXiDictTrial.otf in Resources */,
+				E4C012621CABE1CD00649DB3 /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */,
 				E42781B01CAA74DE0071A02D /* LaunchScreen.storyboard in Resources */,
-				E42781AD1CAA74DE0071A02D /* Assets.xcassets in Resources */,
+				E42781E31CAA7CE90071A02D /* Assets.xcassets in Resources */,
 				E42781AB1CAA74DE0071A02D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,9 +517,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E42781A81CAA74DE0071A02D /* ViewController.m in Sources */,
+				E4A192441CABBF2900C19A4B /* PATableView.m in Sources */,
+				E42781EF1CAA964B0071A02D /* UIView+Extension.m in Sources */,
+				E4A192411CABB4B600C19A4B /* UIImage+Extension.m in Sources */,
+				E4A192321CABAC4A00C19A4B /* PACommonTableViewController.m in Sources */,
+				E4A192291CAAAFEC00C19A4B /* PATabBar.m in Sources */,
+				E42781E91CAA8FF40071A02D /* PANavigationController.m in Sources */,
+				E4A192351CABACE400C19A4B /* PACommonTableViewCell.m in Sources */,
+				E4A192381CABB0C400C19A4B /* PACommonItem.m in Sources */,
+				E4A1923B1CABB17800C19A4B /* PACommonLabelItem.m in Sources */,
 				E42781A51CAA74DE0071A02D /* AppDelegate.m in Sources */,
 				E42781A21CAA74DE0071A02D /* main.m in Sources */,
+				E4A192231CAA9E2E00C19A4B /* PABottomPlanView.m in Sources */,
+				E4A1922F1CABA31D00C19A4B /* PAHomeTableViewController.m in Sources */,
+				E4A1923E1CABB2B300C19A4B /* PACommonGroup.m in Sources */,
+				E4D4076E1CAD4C6600589801 /* PASearchViewController.m in Sources */,
+				E41425101CB0D3A100FFEC41 /* PACalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/ehongzhen/Documents/PlanAction/PlanAction/PAPrefixHeader.pch;
 				INFOPLIST_FILE = PlanAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.e29hz.PlanAction;
@@ -427,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/ehongzhen/Documents/PlanAction/PlanAction/PAPrefixHeader.pch;
 				INFOPLIST_FILE = PlanAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.e29hz.PlanAction;
@@ -499,6 +758,7 @@
 				E42781CC1CAA74DE0071A02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E42781CD1CAA74DE0071A02D /* Build configuration list for PBXNativeTarget "PlanActionTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +767,7 @@
 				E42781CF1CAA74DE0071A02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E42781D01CAA74DE0071A02D /* Build configuration list for PBXNativeTarget "PlanActionUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +776,7 @@
 				E42781D21CAA74DE0071A02D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

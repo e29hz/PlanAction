@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface PABottomPlanView : UIView
+@property (nonatomic, strong) UITextField *textField;
 
 @end
