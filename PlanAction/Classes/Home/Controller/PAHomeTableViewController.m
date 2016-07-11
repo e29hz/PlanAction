@@ -12,7 +12,7 @@
 #import "PACommonGroup.h"
 #import "PACommonItem.h"
 #import "PACommonLabelItem.h"
-#import "PASearchViewController.h"
+#import "PAHistoryViewController.h"
 #import "PANavigationController.h"
 #import "PACalendarViewController.h"
 
@@ -90,7 +90,7 @@
     titleLabel.text = @"计·行";
     self.navigationItem.titleView = (UIView *)titleLabel;
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"日历" style:UIBarButtonItemStyleDone target:self action:@selector(popCalendar)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"历史" style:UIBarButtonItemStyleDone target:self action:@selector(popSearch)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"历史" style:UIBarButtonItemStyleDone target:self action:@selector(popHistory)];
 }
 
 /**
@@ -120,9 +120,9 @@
 - (void)setupPlanGroup
 {
     // 1.创建组
-    PACommonGroup *group = [PACommonGroup group];
-    [self.groups addObject:group];
-    group.header = @"计";
+    PACommonGroup *planGroup = [PACommonGroup group];
+    [self.groups addObject:planGroup];
+    planGroup.header = @"计";
     // 2.设置组的所有行数据
     PACommonLabelItem *planItem1 = [PACommonLabelItem itemWithTitle:@"撩妹"];
     planItem1.text = @"明天";
@@ -130,17 +130,15 @@
     planItem2.text = @"四月一日";
     PACommonLabelItem *planItem3 = [PACommonLabelItem itemWithTitle:@"看技术博客"];
     
-
-    
-    group.items = @[planItem1, planItem2, planItem3];
+    planGroup.items = @[planItem1, planItem2, planItem3];
 }
 
 - (void)setupActionGroup
 {
     // 1.创建组
-    PACommonGroup *group = [PACommonGroup group];
-    [self.groups addObject:group];
-    group.header = @"行";
+    PACommonGroup *actionGroup = [PACommonGroup group];
+    [self.groups addObject:actionGroup];
+    actionGroup.header = @"行";
     // 2.设置组的所有行数据
     PACommonLabelItem *planItem1 = [PACommonLabelItem itemWithTitle:@"看开源项目"];
     planItem1.text = @"三月二十八日";
@@ -149,7 +147,7 @@
     planItem2.isDone = YES;
     PACommonLabelItem *planItem3 = [PACommonLabelItem itemWithTitle:@"打篮球"];
     planItem3.isDone = YES;
-    group.items = @[planItem1, planItem2, planItem3];
+    actionGroup.items = @[planItem1, planItem2, planItem3];
 }
 
 #pragma mark - override view method
@@ -179,12 +177,12 @@
     [self presentViewController:nav animated:YES completion:nil];
 }
 
-- (void)popSearch
+- (void)popHistory
 {
     [self.bottomPlanView setHidden:YES];
-    PASearchViewController *searchViewController = [[PASearchViewController alloc] init];
+    PAHistoryViewController *historyViewController = [[PAHistoryViewController alloc] init];
     
-    [self.navigationController pushViewController:searchViewController animated:YES];
+    [self.navigationController pushViewController:historyViewController animated:YES];
 }
 
 

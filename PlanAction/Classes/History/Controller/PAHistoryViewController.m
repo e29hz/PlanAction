@@ -1,18 +1,18 @@
 //
-//  PASearchViewController.m
+//  PAHistoryViewController.m
 //  PlanAction
 //
-//  Created by 鄂鸿桢 on 16/3/31.
+//  Created by 鄂鸿桢 on 16/6/7.
 //  Copyright © 2016年 e29hz. All rights reserved.
 //
 
-#import "PASearchViewController.h"
+#import "PAHistoryViewController.h"
 
-@interface PASearchViewController ()
+@interface PAHistoryViewController ()
 
 @end
 
-@implementation PASearchViewController
+@implementation PAHistoryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -20,11 +20,11 @@
     
     [self setupNavBar];
     self.view.backgroundColor = PAColor(247, 247, 247, 1);
-
-//    UISearchBar *searchBar = [[UISearchBar alloc] init];
-//    searchBar.frame = CGRectMake(0, 64, self.view.width, 44);
-//    
-//    [self.view addSubview:searchBar];
+    
+    //    UISearchBar *searchBar = [[UISearchBar alloc] init];
+    //    searchBar.frame = CGRectMake(0, 64, self.view.width, 44);
+    //
+    //    [self.view addSubview:searchBar];
     
 }
 
@@ -60,4 +60,5 @@
         }
     }
 }
+
 @end

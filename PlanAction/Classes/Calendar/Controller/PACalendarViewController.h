@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSCalendar.h"
 
-@interface PACalendarViewController : UIViewController
+@interface PACalendarViewController : UIViewController<FSCalendarDataSource, FSCalendarDelegate>
+
+@property (nonatomic, weak) FSCalendar *calendar;
 
 @end

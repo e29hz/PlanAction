@@ -23,6 +23,20 @@
     
 }
 
+- (void)loadView
+{
+    UIView *view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    self.view = view;
+    
+    FSCalendar *calendar = [[FSCalendar alloc] initWithFrame:CGRectMake(0, 64, view.frame.size.width, 300)];
+    calendar.dataSource = self;
+    calendar.delegate = self;
+    calendar.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:calendar];
+    self.calendar = calendar;
+}
+
 /**
  *  设置导航栏内容
  */

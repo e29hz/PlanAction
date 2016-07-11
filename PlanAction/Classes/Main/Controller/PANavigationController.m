@@ -8,7 +8,20 @@
 
 #import "PANavigationController.h"
 
+@interface PANavigationController ()<UINavigationControllerDelegate>
+
+@property (nonatomic, strong) id popDelegate;
+
+@end
+
 @implementation PANavigationController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.popDelegate = self.interactivePopGestureRecognizer.delegate;
+    self.delegate = self;
+}
 
 - (void)loadView
 {
@@ -40,6 +53,10 @@
     }];
 }
 
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    self.interactivePopGestureRecognizer.delegate = viewController == self.viewControllers[0]? self.popDelegate : nil;
+}
 
 
 -(void)setFontFamily:(NSString*)fontFamily forView:(UIView*)view andSubViews:(BOOL)isSubViews
