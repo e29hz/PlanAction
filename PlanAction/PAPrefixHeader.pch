@@ -12,6 +12,7 @@
 
 #import "UIView+Extension.h"
 #import "UIImage+Extension.h"
+#import "sqlite3.h"
 
 //字体
 #define PAWenyueFont @"WenyueType GutiFangsong (Noncommercial Use)"

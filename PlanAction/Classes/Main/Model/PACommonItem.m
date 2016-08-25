@@ -9,6 +9,7 @@
 #import "PACommonItem.h"
 
 @implementation PACommonItem
+
 + (instancetype)itemWithTitleAndImage:(NSString *)title icon:(NSString *)icon
 {
     PACommonItem *item = [[self alloc] init];
@@ -23,4 +24,12 @@
     item.title = title;
     return item;
 }
+
+//- (void)setOperation:(void (^)())operation
+//{
+//    _operation = operation;
+//    operation = ^{
+//        
+//    }
+//}
 @end
