@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E41425101CB0D3A100FFEC41 /* PACalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E414250F1CB0D3A100FFEC41 /* PACalendarViewController.m */; };
 		E42781A21CAA74DE0071A02D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781A11CAA74DE0071A02D /* main.m */; };
-		E42781A51CAA74DE0071A02D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781A41CAA74DE0071A02D /* AppDelegate.m */; };
-		E42781AB1CAA74DE0071A02D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42781A91CAA74DE0071A02D /* Main.storyboard */; };
 		E42781B01CAA74DE0071A02D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42781AE1CAA74DE0071A02D /* LaunchScreen.storyboard */; };
 		E42781BB1CAA74DE0071A02D /* PlanActionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781BA1CAA74DE0071A02D /* PlanActionTests.m */; };
 		E42781C61CAA74DE0071A02D /* PlanActionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42781C51CAA74DE0071A02D /* PlanActionUITests.m */; };
@@ -51,6 +49,7 @@
 		E4A1923E1CABB2B300C19A4B /* PACommonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A1923D1CABB2B300C19A4B /* PACommonGroup.m */; };
 		E4A192411CABB4B600C19A4B /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192401CABB4B600C19A4B /* UIImage+Extension.m */; };
 		E4A192441CABBF2900C19A4B /* PATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A192431CABBF2900C19A4B /* PATableView.m */; };
+		E4A50F9D1D8450BF00387F02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A50F9C1D8450BF00387F02 /* AppDelegate.m */; };
 		E4C012611CABE1CD00649DB3 /* TpldKhangXiDictTrial.otf in Resources */ = {isa = PBXBuildFile; fileRef = E4A192451CABD55E00C19A4B /* TpldKhangXiDictTrial.otf */; };
 		E4C012621CABE1CD00649DB3 /* Wyue-GutiFangsong-NC_deliverable.otf in Resources */ = {isa = PBXBuildFile; fileRef = E4A192461CABD55E00C19A4B /* Wyue-GutiFangsong-NC_deliverable.otf */; };
 /* End PBXBuildFile section */
@@ -77,9 +76,6 @@
 		E414250F1CB0D3A100FFEC41 /* PACalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACalendarViewController.m; sourceTree = "<group>"; };
 		E427819D1CAA74DE0071A02D /* PlanAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42781A11CAA74DE0071A02D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E42781A31CAA74DE0071A02D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
-		E42781A41CAA74DE0071A02D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
-		E42781AA1CAA74DE0071A02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E42781AF1CAA74DE0071A02D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E42781B11CAA74DE0071A02D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E42781B61CAA74DE0071A02D /* PlanActionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanActionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +158,8 @@
 		E4A192431CABBF2900C19A4B /* PATableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PATableView.m; sourceTree = "<group>"; };
 		E4A192451CABD55E00C19A4B /* TpldKhangXiDictTrial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TpldKhangXiDictTrial.otf; sourceTree = "<group>"; };
 		E4A192461CABD55E00C19A4B /* Wyue-GutiFangsong-NC_deliverable.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wyue-GutiFangsong-NC_deliverable.otf"; sourceTree = "<group>"; };
+		E4A50F9B1D8450BF00387F02 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4A50F9C1D8450BF00387F02 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,7 +214,6 @@
 			children = (
 				E4C012601CABE10D00649DB3 /* resource */,
 				E42781D31CAA76490071A02D /* Classes */,
-				E42781A91CAA74DE0071A02D /* Main.storyboard */,
 				E42781AE1CAA74DE0071A02D /* LaunchScreen.storyboard */,
 				E42781A01CAA74DE0071A02D /* Supporting Files */,
 			);
@@ -310,7 +307,7 @@
 				E42781DA1CAA76490071A02D /* Controller */,
 				E42781D91CAA76490071A02D /* Category */,
 				E42781DD1CAA76490071A02D /* Tool */,
-				E42781DC1CAA76490071A02D /* Other */,
+				E4A50F9A1D8450BF00387F02 /* Other */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -346,15 +343,6 @@
 				E4A1923D1CABB2B300C19A4B /* PACommonGroup.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		E42781DC1CAA76490071A02D /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				E42781A31CAA74DE0071A02D /* AppDelegate.h */,
-				E42781A41CAA74DE0071A02D /* AppDelegate.m */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		E42781DD1CAA76490071A02D /* Tool */ = {
@@ -465,6 +453,15 @@
 				E49B777D1D06A89D00873E68 /* UIView+FSExtension.m */,
 			);
 			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		E4A50F9A1D8450BF00387F02 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E4A50F9B1D8450BF00387F02 /* AppDelegate.h */,
+				E4A50F9C1D8450BF00387F02 /* AppDelegate.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		E4C012601CABE10D00649DB3 /* resource */ = {
@@ -621,7 +618,6 @@
 				E49B778D1D06A89D00873E68 /* Info.plist in Resources */,
 				E42781B01CAA74DE0071A02D /* LaunchScreen.storyboard in Resources */,
 				E42781E31CAA7CE90071A02D /* Assets.xcassets in Resources */,
-				E42781AB1CAA74DE0071A02D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,12 +667,12 @@
 				E4A192351CABACE400C19A4B /* PACommonTableViewCell.m in Sources */,
 				E4A192381CABB0C400C19A4B /* PACommonItem.m in Sources */,
 				E49B778E1D06A89D00873E68 /* UIView+FSExtension.m in Sources */,
+				E4A50F9D1D8450BF00387F02 /* AppDelegate.m in Sources */,
 				E49B77891D06A89D00873E68 /* FSCalendarFlowLayout.m in Sources */,
 				E4A1923B1CABB17800C19A4B /* PACommonLabelItem.m in Sources */,
 				E49B775C1D06A2B800873E68 /* PAHistoryViewController.m in Sources */,
 				E49B77871D06A89D00873E68 /* FSCalendarConstance.m in Sources */,
 				E49B77841D06A89D00873E68 /* FSCalendarAppearance.m in Sources */,
-				E42781A51CAA74DE0071A02D /* AppDelegate.m in Sources */,
 				E42781A21CAA74DE0071A02D /* main.m in Sources */,
 				E4A192231CAA9E2E00C19A4B /* PABottomPlanView.m in Sources */,
 				E4A1922F1CABA31D00C19A4B /* PAHomeTableViewController.m in Sources */,
@@ -718,14 +714,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E42781A91CAA74DE0071A02D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E42781AA1CAA74DE0071A02D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E42781AE1CAA74DE0071A02D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -823,7 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/ehongzhen/Documents/PlanAction/PlanAction/PAPrefixHeader.pch;
+				GCC_PREFIX_HEADER = PlanAction/PAPrefixHeader.pch;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = PlanAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -836,7 +824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/ehongzhen/Documents/PlanAction/PlanAction/PAPrefixHeader.pch;
+				GCC_PREFIX_HEADER = PlanAction/PAPrefixHeader.pch;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = PlanAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

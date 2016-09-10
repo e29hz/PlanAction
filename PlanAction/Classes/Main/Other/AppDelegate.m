@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PANavigationController.h"
+#import "PAHomeTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //1.创建窗口
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    //2.显示窗口（成为主窗口）
+    [self.window makeKeyAndVisible];
+    
+    //3.设置窗口的根控制器
+    PAHomeTableViewController *homeTableViewController = [[PAHomeTableViewController alloc] init];
+    self.window.rootViewController = [[PANavigationController alloc] initWithRootViewController:homeTableViewController];
     return YES;
 }
 
