@@ -27,8 +27,7 @@
 
 @implementation PAHomeTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     self.tableView = [[PATableView alloc] init];
     
     [self setupNavBar];
@@ -45,8 +44,16 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
-- (void)dealloc
-{
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.bottomPlanView setHidden:NO];
+    self.bottomPlanView.transform = CGAffineTransformMakeTranslation(0, self.bottomPlanView.height);
+    [UIView animateWithDuration:0.5 animations:^{
+        self.bottomPlanView.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+}
+
+- (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -54,25 +61,23 @@
 /**
  *  键盘即将隐藏
  */
-- (void)keyboardWillHide:(NSNotification *)note
-{
+- (void)keyboardWillHide:(NSNotification *)notification {
     // 1.键盘弹出需要的时间
-    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    CGFloat duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     
     // 2.动画
     [UIView animateWithDuration:duration animations:^{
         self.bottomPlanView.transform = CGAffineTransformIdentity;
     }];
 }
-- (void)keyboardWillShow:(NSNotification *)note
-{
+- (void)keyboardWillShow:(NSNotification *)notification {
     // 1.键盘弹出需要的时间
-    CGFloat duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    CGFloat duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
     
     // 2.动画
     [UIView animateWithDuration:duration animations:^{
         // 取出键盘高度
-        CGRect keyboardF = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        CGRect keyboardF = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
         CGFloat keyboardH = keyboardF.size.height;
         self.bottomPlanView.transform = CGAffineTransformMakeTranslation(0, - keyboardH);
     }];
@@ -82,8 +87,7 @@
 /**
  *  设置导航栏内容
  */
-- (void)setupNavBar
-{
+- (void)setupNavBar {
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.font = [UIFont fontWithName:PAWenyueFont size:20];
     titleLabel.frame = CGRectMake(0, 0, 50, 35);
@@ -96,8 +100,7 @@
 /**
  *  添加底部输入框
  */
-- (void)setupBottomPlanView
-{
+- (void)setupBottomPlanView {
     PABottomPlanView *bottomPlanView = [[PABottomPlanView alloc] init];
     bottomPlanView.textField.delegate = self;
     [PAfirstView addSubview:bottomPlanView];
@@ -111,14 +114,12 @@
 /**
  *  初始化模型数据
  */
-- (void)setupGroups
-{
+- (void)setupGroups {
     [self setupPlanGroup];
     [self setupActionGroup];
 }
 
-- (void)setupPlanGroup
-{
+- (void)setupPlanGroup {
     // 1.创建组
     PACommonGroup *planGroup = [PACommonGroup group];
     [self.groups addObject:planGroup];
@@ -133,8 +134,7 @@
     planGroup.items = @[planItem1, planItem2, planItem3];
 }
 
-- (void)setupActionGroup
-{
+- (void)setupActionGroup {
     // 1.创建组
     PACommonGroup *actionGroup = [PACommonGroup group];
     [self.groups addObject:actionGroup];
@@ -152,39 +152,29 @@
 
 #pragma mark - override view method
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
-{
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [PAfirstView endEditing:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [self.bottomPlanView setHidden:NO];
-}
-
 #pragma mark - 私有方法
-- (void)popCalendar
-{
+- (void)popCalendar {
     [self.bottomPlanView setHidden:YES];
     PACalendarViewController *calendarViewController = [[PACalendarViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:calendarViewController];
     [self presentViewController:nav animated:YES completion:nil];
 }
 
-- (void)popHistory
-{
+- (void)popHistory {
     [self.bottomPlanView setHidden:YES];
     PAHistoryViewController *historyViewController = [[PAHistoryViewController alloc] init];
     
     [self.navigationController pushViewController:historyViewController animated:YES];
 }
-
 
 @end
 
